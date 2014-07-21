@@ -1,29 +1,38 @@
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
 *, *:before, *:after {
   border: 1px solid red;
   box-sizing: border-box;
 }
-.wrapper {
-  max-width: 960px;
-  width: 100%;
-}
-.cf:before, .cf:after {
+$font-stack: 'Open Sans', sans-serif;
+@mixin clearfix {
    content: " ";
    visibility: hidden;
    display: block;
    height: 0;
 }
+.wrapper {
+  max-width: 100%;
+  width: 960px;
+  margin: 0 auto;
+  @include clearfix;
+}
 body {
   margin: 0;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-stack;
 }
-body < div {
-  background: white;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-  filter: alpha(opacity=70);
-  -moz-opacity: 0.7;
-  -khtml-opacity: 0.7;
-  opacity: 0.7;
+body { 
+  > div {
+    background: white;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+  }
 }
 h1 {
   font-size: 2em;
@@ -35,6 +44,9 @@ h2 {
 h3 {
   font-size: 1.5em;
   font-weight: lighter;
+}
+img {
+  width: 100%;
 }
 .album-header {
   width: 85%;
