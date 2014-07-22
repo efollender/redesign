@@ -35,16 +35,21 @@ a {
   text-decoration: none;
   color: purple;
 }
+p {
+  text-align: left;
+}
 i {
   font-size: 1.5em;
   color: white;
   font-style: normal;
+  border-radius: 5px;
 }
 a.play{
   color:white;
   background: #c00;
   display: inline-block;
-  padding: .5em;
+  padding: 1%;
+  width: 4%;
 }
 h1 {
   font-size: 2em;
@@ -77,8 +82,11 @@ nav {
 
 /*ALBUM DIV*/
 .album-header {
-  width: 85%;
+  width: 100%;
   display: inline-block;
+}
+.album-title {
+  width: 85%;
 }
 .album-title img {
   width: 15%;
@@ -95,4 +103,17 @@ nav {
 /*TRACKS*/
 .tracks div a, .tracks div h4, .tracks div span, .tracks div button {
   display: inline-block;
+}
+.tracks {
+  max-height: 300px;
+  overflow: auto; 
+}
+.tracks h4 {
+  width: 70%;
+}
+.tracks .time {
+  width: 8%;
+}
+.tracks .download {
+  width: 12%;
 }
