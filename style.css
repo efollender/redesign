@@ -4,7 +4,7 @@
   font-family: 'entypo', sans-serif;
 }
 *, *:before, *:after {
-  border: 1px solid red;
+/*  border: 1px solid red;*/
   box-sizing: border-box;
 }
 .wrapper {
@@ -22,6 +22,7 @@ body {
   margin: 0;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
+  background-image: url('background2.jpg');
 }
 body > div {
   background: white;
@@ -31,6 +32,10 @@ body > div {
   -khtml-opacity: 0.7;
   opacity: 0.7;
 }
+/*
+header > div > h2 {
+  float: right;
+}*/
 a {
   text-decoration: none;
   color: purple;
@@ -54,6 +59,7 @@ a.play{
 h1 {
   font-size: 2em;
   font-weight: bold;
+  margin: 0;
 }
 h2 {
   font-size: 1.5em;
@@ -62,6 +68,8 @@ h3 {
   font-size: 1.5em;
   font-weight: lighter;
 }
+
+
 img {
   width: 100%;
 }
